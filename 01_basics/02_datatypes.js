@@ -1,6 +1,8 @@
+// JS Tutorial : Data Types in JavaScript
+
 "use strict" // treat all js code as newer version
 
-// alert("notify") // pop up in browser 
+// alert("notify") // we are using nodejs, not browser, so alert will not work here.
 
 // DataTypes => Primitive & Non-primitive
 
@@ -24,10 +26,24 @@ const newFunc = function(){
 }
 
 console.log(color)
-console.log(typeof y) // Undefined
-console.log(typeof null) // Object
-console.log(typeof(cars))
 console.log(date)
 
-// undefined represents a variable that has been declared but not assigned, while null is an explicit assignment representing “no value”.
+// Typeof operator to check the data type
+console.log(typeof "Sayan") // String
+console.log(typeof y) // Undefined
+console.log(typeof undefined) // Undefined
+console.log(typeof null) // Object
+console.log(typeof(cars))
 
+// Undefined vs null: undefined represents a variable that has been declared but not assigned, while null is an explicit assignment representing “no value”.
+
+/* Data Types in JavaScript:
+1. String - Represents text data, enclosed in quotes.
+2. Number - Represents numeric values, both integers and floating-point.  
+3. BigInt - Represents large integers, created by appending 'n' to the end of a number.
+4. Boolean - Represents a logical entity, either true or false.
+5. Undefined - Represents a variable that has been declared but not assigned a value.
+6. Null - Represents an intentional absence of any object value.
+7. Symbol - Represents a unique and immutable value, often used as object property keys.
+8. Object - Represents a collection of properties, can be arrays, functions, or user-defined objects.
+*/
