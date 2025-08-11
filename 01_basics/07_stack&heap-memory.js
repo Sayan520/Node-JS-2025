@@ -11,12 +11,12 @@ console.log(a); // Output: 10, original value remains unchanged
 console.log(b); // Output: 20, b is changed
 
 
+// Heap memory example
 let user = {
   name: "Sayan",
   age: 25
 } 
 
-// Heap memory example
 let user2 = user; // Copying reference of user to user2
 user2.age = 30; // Changing age in user2
 console.log(user.age); // Output: 30, original value is affected
