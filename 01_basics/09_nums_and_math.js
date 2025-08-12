@@ -63,7 +63,7 @@ const min = 10;
 const max = 20;
 
 const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
-console.log(randomValue); // Random integer between 10 and 20
+console.log(randomValue); // Random value between 10 and 20
 
 /* Step-by-step explanation:
 1. max - min + 1: This calculates the range of numbers (in this case, 11) and +1 to avoid 0.
