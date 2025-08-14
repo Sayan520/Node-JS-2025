@@ -19,7 +19,10 @@ console.log(currentDate.toUTCString()); // UTC format of the current date and ti
 console.log(currentDate.getTime()); // Timestamp in milliseconds since January 1, 1970 January)
 console.log(currentDate.getDate()); // Day of the month (1-31)
 console.log(currentDate.getMonth()); // Current month (0-11)
+console.log(currentDate.getDay()); // Current day (1-7)
 console.log(currentDate.getFullYear()); // Current year (e.g., 2023)
+
+console.log(`the current day is ${currentDate.getDay()}th and current month is ${currentDate.getMonth()} of the year ${currentDate.getFullYear()}`); // string
 
 // manual date and time creation
 const specificDate = new Date(2023, 0, 23) 
