@@ -1,4 +1,4 @@
-/* JS Tutorial : Objects part 2 */
+/****************************************** JS Tutorial : Objects part 2 ******************************************/
 
 const newObject = new Object() // singleton object
 const newObject2 = {} // non-singleton object

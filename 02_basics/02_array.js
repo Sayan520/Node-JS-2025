@@ -1,4 +1,4 @@
-/* JS Tutorial - Arrays part 2 */
+/****************************************** JS Tutorial - Arrays part 2 ******************************************/
 
 // Array methods
 

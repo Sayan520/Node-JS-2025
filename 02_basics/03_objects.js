@@ -1,4 +1,4 @@
-/* JS Tutorial - Objects */
+/****************************************** JS Tutorial - Objects ******************************************/
 
 // Singleton object : if we create object using constructor then it will be one single object
 // Object.create()

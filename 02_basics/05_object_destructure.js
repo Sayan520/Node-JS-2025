@@ -1,4 +1,4 @@
-/* JS Tutorial: Object De-structure and JSON API in JavaScript */
+/****************************************** JS Tutorial: Object De-structure and JSON API in JavaScript ******************************************/
 
 const course = {
   id: 101,
