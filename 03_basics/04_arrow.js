@@ -13,7 +13,7 @@ let user = {
 
 user.welcomeMessage() // Hi Sayan, Welcome to the JS Tutorial!
 user.name = "Sam" 
-// now it will print the current context message based on the name value 
+// now it will print the current context message based on the `name` value 
 user.welcomeMessage() // Hi Sam, Welcome to the JS Tutorial!
 
 

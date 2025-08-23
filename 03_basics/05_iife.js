@@ -8,8 +8,8 @@
 // the first () is using for function definition and the second () is for function execution call
 
 // Arrow Function IIFE
-( (name) => {
-  console.log(`${name} Database Connected!`);
+( (dbname) => {
+  console.log(`${dbname} Database Connected!`);
 } )("MySQL")
 
 
