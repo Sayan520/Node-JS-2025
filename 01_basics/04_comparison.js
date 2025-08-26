@@ -27,6 +27,10 @@ console.log(undefined < 0); // false
 
 // strict check (===) checks both value and type
 console.log("2" === 2); // false
+console.log("2" == 2); // true because it does not check the type
+
+// = assignment operator
+// == comparison operator
 
 const varID = Symbol("123")
 const varID2 = Symbol("123")

@@ -10,7 +10,7 @@ let color = "Blue"; // String
 let age = 25; //Number
 let bignum = BigInt("123456789") // Bigint
 let x = true; // Boolean
-let y; // Undefined
+let y; // Undefined (don't use const for undefined declaration)
 
 // Object => array object & user-defined object
 
