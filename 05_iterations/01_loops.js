@@ -1,4 +1,6 @@
 /* LOOPS in JS */
+// for (initialization; condition; afterthought)
+//   statement
 
 // basic syntax
 for (let i = 0; i <= 10; i++) {
@@ -45,5 +47,5 @@ for (let index = 1; index <= 20; index++) {
 }
 
 /* break vs continue: 
-break terminate the current loop based on condition but 
-continue skips the current iteration but won't stop the entire loop */
+the break statement terminates the loop entirely,
+the continue statement skips the current iteration but won't stop the entire loop */

@@ -1,22 +1,31 @@
 # Beginner JavaScript Notes 2025 📘
 
-Welcome to **Beginner JavaScript Notes**!  
+Welcome to **Beginner JavaScript Notes 2025**!  
 This repository is created for **absolute beginners** who want to learn JavaScript step by step with **simple examples, explanations, and notes**.  
 
 ---
 
 ## 📌 What is Inside?
-- Clear explanations of **JavaScript concepts** in beginner-friendly language.  
+- Clear explanations of **JavaScript concepts using NodeJS environment** in beginner-friendly language.  
 - Code snippets with **comments** to understand how things work.  
 - **Theory notes + Practical examples** (both included for clarity).  
 - Covers basics like:
   - Variables (`var`, `let`, `const`)
-  - Functions (Normal vs Arrow Functions)
-  - Scope & Hoisting
-  - Immediately Invoked Function Expressions (IIFE)
+  - Datatype (`Primitive` & `Non-primitive`)
+  - Operators (`Arithmetic, Assignment, Logical, Comparison, Bitwise etc`)
+  - Stack & Heap
+  - String 
+  - Number & Maths
+  - Date & Time
   - Arrays & Objects
-  - Loops & Conditionals
-  - Events & DOM Basics (later)
+  - Functions (`Normal vs Arrow Functions`)
+  - Scope & Hoisting
+  - Immediately Invoked Function Expressions (`IIFE`)
+  - Function Execution Context & Call Stack
+  - Control Flow (`if-else, switch`)
+  - Loops & Conditionals (`for, while, do-while`)
+  - For (`forof, forin, foreach`)
+  - Events & DOM Basics (`later`)
 
 ---
 
@@ -32,6 +41,7 @@ This repository is created for **absolute beginners** who want to learn JavaScri
 2. Go through each file step by step.
 3. Run examples in **browser console** or with **Node.js**.
 4. Read comments in the code (they act like mini-notes ✍️).
+5. Flow Diagram explanation using Draw.io.
 
 ---
 
@@ -46,5 +56,5 @@ function greet(name) {
 // Arrow Function
 const greetArrow = (name) => `Hello, ${name}!`;
 
-console.log(greet("Sayan"));       // Hello, Sayan!
-console.log(greetArrow("World"));  // Hello, World!
+console.log(greet("Sayan"));       // Output: Hello, Sayan!
+console.log(greetArrow("World"));  // Output: Hello, World!
