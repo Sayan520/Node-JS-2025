@@ -67,20 +67,20 @@ test4() // {}
 
 
 /* this in Return Statements */
-// explicit return
+// explicit return ( use return )
 const addTwo = (num1, num2) => {
   return num1 + num2
 }
 
 console.log(addTwo(5, 7)); // 12
 
-// implicit return 
+// implicit return (without return)
 const addTwoo = (num1, num2) => (num1 + num2)
 
 console.log(addTwoo(5, 7)); // 12
 
-/* if we use {} then we must have to use return keyword 
-but if we use () then we don't have to use return 
+/* if we use scope {} then we must have to use `return` keyword 
+but if we use () then we don't have to use `return` 
 this technique is used rarely in React
 */
 

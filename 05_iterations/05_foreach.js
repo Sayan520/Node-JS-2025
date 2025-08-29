@@ -1,4 +1,4 @@
-/* foreach */
+/* ForEach Loops: Higher order function */
 
 const programming = ["js", "py", "html", "css"]
 
@@ -45,3 +45,6 @@ const coding = [
 coding.forEach( (item) => {
   console.log(item.programmingName);
 } )
+
+
+/* ForEach Loops mostly using for arrays */

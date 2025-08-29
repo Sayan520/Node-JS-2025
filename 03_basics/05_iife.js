@@ -16,5 +16,5 @@
 /*
 IIFE is a function that runs immediately after its definition.
 It helps to avoid polluting the global scope by creating a private scope.
-Syntax: (function(){ ... })(); 
+Syntax: (function(){ ... })(); or, ( () => {} )();
 */

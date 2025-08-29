@@ -1,4 +1,4 @@
-/* forin */
+/* For-In Loops */
 
 // object
 const myObj = {
@@ -19,9 +19,7 @@ for (const key in myArr) {
   console.log(myArr[key]); 
 }
 
-// arrays has keys start from 0 to ...
-
-// maps is not iterable
-
-
-
+/* 1. arrays has keys start from 0 to ...
+2. we can't use maps in for-in because maps is not iterable
+3. in For-In loops by default it prints only keys, not values that why array shows as 0,1...
+*/

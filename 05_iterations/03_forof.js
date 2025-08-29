@@ -1,4 +1,4 @@
-// forof
+/* For-Of Loop */
 
 const arr = [1, 2, 3, 4, 5]
 
@@ -23,23 +23,18 @@ It maintains the original insertion order of the keys.
 it is unique in the Map's collection */
 
 const myMap = new Map()
+console.log(typeof myMap); // object
+
 myMap.set("IN", 'India')
 myMap.set("USA", 'United Set Of America')
 myMap.set("Fr", 'France')
 myMap.set("IN", 'India') // does not contain duplicate
 
-console.log(myMap); 
-
-// Map(3) {
-//   'IN' => 'India',  
-//   'USA' => 'United Set Of America',
-//   'Fr' => 'France'
-// }
-
+console.log(myMap); // Map(3) {...}
 
 for (const key of myMap) {
   console.log(key)
-} // returns a single array
+} // returns a single array []
 
 // to prevent this, use array destructure
 
@@ -47,7 +42,7 @@ for (const [key, value] of myMap) {
   console.log(key,':-', value);
 }
 
-// object is not iterable in forof syntax
+// object is not iterable in For-Of syntax
 
 const myObj = {
   '1': "one",
