@@ -16,7 +16,6 @@ console.log(anotherNum); // [ 11, 12, 13, 14, 15, 16 ]
 
 
 // chaining
-
 const multipleNum = num
                     .map( (val) => val * 10 )
                     .map( (val) => val + 10 )

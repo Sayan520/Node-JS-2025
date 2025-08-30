@@ -111,9 +111,13 @@ const userData = [
 ];
 
 const dataStore = userData.filter(
-  (data) => data.status === 0 && data.severity > 2
-);
+  (data) => data.status === 0 && data.severity > 2);
+  
 console.log(dataStore);
 
 /* must declare return keyword when use scope in function, 
 otherwise if use implicit return () don't need return */
+
+/* Filter is used for returns the elements of an array 
+that meet the condition (true/false) specified in a callback function.*/
+

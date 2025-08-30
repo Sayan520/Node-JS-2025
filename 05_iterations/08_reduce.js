@@ -19,7 +19,6 @@ const anotherSum = myArr.reduce((acc, currVal) => {
 console.log(anotherSum); // 15
 
 // array of object
-
 const userData = [
   { id: 1, name: "Alice", age: 21 },
   { id: 2, name: "Bob", age: 25 },
@@ -29,3 +28,10 @@ const userData = [
 
 const userAge = userData.reduce((arr, keys) => arr + keys.age, 0);
 console.log(userAge); // 96
+
+
+/* Reduce in JavaScript:
+accumulator: First time this will take a initial value then it add with current values each time
+current value: The value of the current element
+initial value: A value to which accumulator is initialized the first time the callback is called. 
+*/
