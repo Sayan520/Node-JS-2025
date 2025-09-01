@@ -25,7 +25,12 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - Control Flow (`if-else, switch`)
   - Loops & Conditionals (`for, while, do-while`)
   - For (`forof, forin, foreach`)
-  - Events & DOM Basics (`later`)
+  - Filter, Map, Reduce
+  - Document Object Model (DOM) =>
+  - DOM: `getElementById, getElementByClassName, getElementByName, getElementByTagName`
+  - DOM: `querySelector, querySelectorAll`
+  - DOM: `innerText, innerHTML, textContent`
+  - Events
 
 ---
 

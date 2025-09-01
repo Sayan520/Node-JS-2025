@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Learning</title>
+  <style>
+    .bg-black{
+      background-color: #212121;
+      color: #ffff
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <div>
+    <h1 id="title" class="heading">DOM Learning in JavaScript <span style="display: none;">text test</span> </h1>
+    <h2>Lorem, ipsum.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="password" name="" id="">
+
+    <ul>
+      <li class="list-item">one</li>
+      <li class="list-item">two</li>
+      <li class="list-item">three</li>
+      <li class="list-item">four</li>
+    </ul>
+  </div>
+</body>
+</html>
+
+
+<!-- getElementById (browser console):
+document.getElementById('title')
+document.getElementById('title').id
+document.getElementById('title').class
+document.getElementById('title').className
+document.getElementById('title').getAttribute
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class', 'test heading')
+const title = document.getElementByClassName('heading')
+
+const title = document.getElementById('title')
+title
+title.style.backgroundColor = "blue"
+title.style.padding = "15px"
+title.style.borderRadius = "15px"
+
+title.innerHTML -- DOM Learning in JavaScript <span style="display: none;">text test</span>
+title.innerText --DOM Learning in JavaScript
+title.textContent -- DOM Learning in JavaScript text test
+-->
+
+
+<!-- DIFFERENCES:
+innerText VS textContent =>
+innerText is used for need the visible, rendered text content of an element, as it would appear to a user.
+it will not return text from hidden elements (e.g., elements with display: none).
+textContent Returns the raw text content of an element. 
+When we need the complete, raw text content of an element, including hidden or styled text.
+
+innerHTML VS innerText=> 
+innerHTML property gets or sets the HTML markup contained within an element. 
+When retrieving content, it returns the raw HTML, including all tags, attributes, and text.
+innerHTML handles HTML markup, while innerText handles plain text, it doesn't support inner HTML tags.
+HTML Parsing: innerHTML parses HTML, while innerText treats everything as literal text.
+-->
+
+<!-- querySelector: used for select one value
+document.querySelector('h2')
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('input[type="password"]')
+document.querySelector('p:first-child')
+
+document.querySelector('ul')
+const myul = document.querySelector('ul')
+myul.querySelector('li')
+const myli = myul.querySelector('li')
+myli.style.backgroundColor = 'blue'
+myli.style.padding = '10px'
+myli.style.borderRadius = '10px'
+myli.innerText
+myli.innerText = 'five'
+-->
+
+<!-- querySelectorAll:
+const myList = document.querySelectorAll('li')
+myList -- NodeList(3) [li,li,li] not array
+myList.style.backgroundColor = 'blue' -- ReferenceError
+myList[0].style.backgroundColor = 'blue'
+myList.forEach((key) => key.style.backgroundColor = 'blue' )
+-->
+
+<!-- DIFFERENCES:
+querySelector vs querySelectorAll =>
+querySelector() returns the first HTML element within the document (or a specified element) that matches the provided CSS selector.
+querySelectorAll()returns a NodeList containing all HTML elements within the document (or a specified element) that match the provided CSS selector.
+-->
+
+
+<!-- getElementIdByClassName:
+const myHTML = document.getElementsByClassName('list-item')
+const myArr = Array.from(myHTML)
+myArr.foreach((val) => val.style.color = 'blue')
+-->
+
+<!-- Wikipedia: JavaScript
+const myH2 = document.querySelectorAll('h2')
+myH2[0].innerText
+myH2.forEach(function(key) {
+    key.style.backgroundColor = 'yellow';
+    key.style.color = 'blue';
+    key.style.padding = '15px';
+    key.style.borderRadius = '15px';
+    key.innerText = 'Sayan Ghosh'
+}) 
+-->
+
+<!-- DIFFERENCES:
+HTMLCollection & NodeList =>
+HTMLCollection exclusively contains Element nodes (HTML tags).
+NodeList can contain any type of Node, including Element nodes, Text nodes, Comment nodes, Attribute nodes, etc.
+-->
