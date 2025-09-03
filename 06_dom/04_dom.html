@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM | Create a New Element</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+  
+</body>
+<script>
+  const div = document.createElement('div') // div element create
+  console.log(div);
+  
+  div.className = 'content'
+  div.id = Math.round(Math.random() * 10 + 1)
+  div.setAttribute("main", "generated-main")
+  div.style.backgroundColor = 'green'
+  div.style.color = 'black'
+  div.style.padding = '12px'
+  div.style.borderRadius = '10px'
+  // div.innerText = "JavaScript With Sayan"
+  const addText = document.createTextNode('JavaScript With Sayan') // best for optimization
+  div.appendChild(addText)  
+
+  document.body.appendChild(div) // attach the child from memory into browser 
+</script>
+</html>

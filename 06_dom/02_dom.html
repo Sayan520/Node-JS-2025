@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM Learning</title>
+  <title>DOM | Basics in console</title>
   <style>
     .bg-black{
       background-color: #212121;
@@ -17,7 +17,8 @@
     <h2>Lorem, ipsum.</h2>
     <h2>Lorem, ipsum dolor.</h2>
     <h2>Lorem ipsum dolor sit.</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p id="para">Lorem ipsum dolor sit amet.</p>
     <input type="password" name="" id="">
 
     <ul>
@@ -30,29 +31,26 @@
 </body>
 </html>
 
-
 <!-- getElementById (browser console):
-document.getElementById('title')
-document.getElementById('title').id
-document.getElementById('title').class
-document.getElementById('title').className
-document.getElementById('title').getAttribute
-document.getElementById('title').getAttribute('id')
-document.getElementById('title').getAttribute('class')
-document.getElementById('title').setAttribute('class', 'test heading')
-const title = document.getElementByClassName('heading')
+document.getElementById('title') -- <h1 id="title" class="heading">....</h1>
+document.getElementById('title').id -- return the value of id('title')
+document.getElementById('title').class -- undefined
+document.getElementById('title').className --  return the value of class ('heading')
+document.getElementById('title').getAttribute -- ƒ getAttribute() { [native code] }
+document.getElementById('title').getAttribute('id') -- 'title'
+document.getElementById('title').getAttribute('class') -- 'heading'
+document.getElementById('title').setAttribute('class', 'test heading') -- override the current class 
 
 const title = document.getElementById('title')
-title
 title.style.backgroundColor = "blue"
 title.style.padding = "15px"
 title.style.borderRadius = "15px"
+title -- all properties can see temporarily 
 
 title.innerHTML -- DOM Learning in JavaScript <span style="display: none;">text test</span>
 title.innerText --DOM Learning in JavaScript
 title.textContent -- DOM Learning in JavaScript text test
 -->
-
 
 <!-- DIFFERENCES:
 innerText VS textContent =>
@@ -61,14 +59,14 @@ it will not return text from hidden elements (e.g., elements with display: none)
 textContent Returns the raw text content of an element. 
 When we need the complete, raw text content of an element, including hidden or styled text.
 
-innerHTML VS innerText=> 
+innerHTML VS innerText => 
 innerHTML property gets or sets the HTML markup contained within an element. 
 When retrieving content, it returns the raw HTML, including all tags, attributes, and text.
 innerHTML handles HTML markup, while innerText handles plain text, it doesn't support inner HTML tags.
 HTML Parsing: innerHTML parses HTML, while innerText treats everything as literal text.
 -->
 
-<!-- querySelector: used for select one value
+<!-- querySelector: used for select one value(pass css selector as syntax)
 document.querySelector('h2')
 document.querySelector('#title')
 document.querySelector('.heading')
@@ -84,31 +82,33 @@ myli.style.padding = '10px'
 myli.style.borderRadius = '10px'
 myli.innerText
 myli.innerText = 'five'
+myli[0].innerText = 'five'
 -->
 
 <!-- querySelectorAll:
 const myList = document.querySelectorAll('li')
 myList -- NodeList(3) [li,li,li] not array
 myList.style.backgroundColor = 'blue' -- ReferenceError
-myList[0].style.backgroundColor = 'blue'
-myList.forEach((key) => key.style.backgroundColor = 'blue' )
+myList[0].style.backgroundColor = 'blue' -- use index element
+myList.forEach((key) => key.style.backgroundColor = 'blue')
 -->
 
 <!-- DIFFERENCES:
 querySelector vs querySelectorAll =>
-querySelector() returns the first HTML element within the document (or a specified element) that matches the provided CSS selector.
-querySelectorAll()returns a NodeList containing all HTML elements within the document (or a specified element) that match the provided CSS selector.
+querySelector() returns the first HTML element within the document (or a specified element) 
+that matches the provided CSS selector.
+querySelectorAll() returns a NodeList containing all HTML elements within the document (or a specified element)
+that match the provided CSS selector.
 -->
 
-
 <!-- getElementIdByClassName:
-const myHTML = document.getElementsByClassName('list-item')
+const myHTML = document.getElementsByClassName('list-item') -- returns HTMLCollection[]
 const myArr = Array.from(myHTML)
 myArr.foreach((val) => val.style.color = 'blue')
 -->
 
 <!-- Wikipedia: JavaScript
-const myH2 = document.querySelectorAll('h2')
+const myH2 = document.querySelectorAll('h2') --- use tag for manipulate all elements in the current page
 myH2[0].innerText
 myH2.forEach(function(key) {
     key.style.backgroundColor = 'yellow';
@@ -121,6 +121,6 @@ myH2.forEach(function(key) {
 
 <!-- DIFFERENCES:
 HTMLCollection & NodeList =>
-HTMLCollection exclusively contains Element nodes (HTML tags).
+HTMLCollection exclusively contains Element nodes (HTML tags), it is an array like property.
 NodeList can contain any type of Node, including Element nodes, Text nodes, Comment nodes, Attribute nodes, etc.
 -->

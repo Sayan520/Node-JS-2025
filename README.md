@@ -30,6 +30,9 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - DOM: `getElementById, getElementByClassName, getElementByName, getElementByTagName`
   - DOM: `querySelector, querySelectorAll`
   - DOM: `innerText, innerHTML, textContent`
+  - DOM: `HTMLCollection, NodeList`
+  - DOM: `ParentToChild & ChildToParent Traversing, NextElementSibling, NodeList`
+  - DOM: `How To Create A New Element`
   - Events
 
 ---

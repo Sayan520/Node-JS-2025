@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM | ParentToChild, ChildToParent, Sibling, NodeList</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+  <div class="parent">
+    <!-- this is a parent-to-child traversing -->
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+  </div>
+</body>
+<script>
+  const parent = document.querySelector('.parent')
+  console.log(parent);
+  console.log(parent.children); // return all children of that parent, returns HTMLCollection()
+  console.log(parent.children[0]); // array-like-property so can access using index, returns the first div
+  console.log(parent.children[0].innerHTML); // Monday
+  
+  // iterate through all days
+  for (let i = 0; i < parent.children.length; i++) {
+    const element = parent.children[i].innerHTML;
+    console.log(element); 
+  }
+
+  parent.children[0].style.color = 'purple';
+
+  console.log(parent.firstElementChild); // first child access
+  console.log(parent.lastElementChild); // last child access
+  
+  const dayOne = document.querySelector('.day')
+  console.log(dayOne); // first day div
+  console.log(dayOne.parentElement); // parent div access
+  console.log(dayOne.nextElementSibling); // next div sibling
+
+  /***** IMPORTANT About NodeList *****/
+  console.log("ChildNodes:", parent.childNodes); // NodeList(11)[....]
+
+  /* A NodeList is a collection of document nodes which includes Text nodes, Attribute nodes & Element nodes. 
+  A line break is also counted in NodeList. They are represented as textNode in NodeList.
+  But if there are multiple ine breaks simultaneously or right after same node than they are ignored.
+  All subsequent line breaks are ignored by browser. */
+
+</script>
+</html>
