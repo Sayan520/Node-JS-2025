@@ -17,7 +17,7 @@
 <script>
   const parent = document.querySelector('.parent')
   console.log(parent);
-  console.log(parent.children); // return all children of that parent, returns HTMLCollection()
+  console.log(parent.children); // returns all children of that parent as HTMLCollection()[...]
   console.log(parent.children[0]); // array-like-property so can access using index, returns the first div
   console.log(parent.children[0].innerHTML); // Monday
   
@@ -32,9 +32,11 @@
   console.log(parent.firstElementChild); // first child access
   console.log(parent.lastElementChild); // last child access
   
+  // ChildToParent Traversing
   const dayOne = document.querySelector('.day')
   console.log(dayOne); // first day div
   console.log(dayOne.parentElement); // parent div access
+
   console.log(dayOne.nextElementSibling); // next div sibling
 
   /***** IMPORTANT About NodeList *****/
@@ -42,7 +44,7 @@
 
   /* A NodeList is a collection of document nodes which includes Text nodes, Attribute nodes & Element nodes. 
   A line break is also counted in NodeList. They are represented as textNode in NodeList.
-  But if there are multiple ine breaks simultaneously or right after same node than they are ignored.
+  But if there are multiple line breaks simultaneously or right after same node than they are ignored.
   All subsequent line breaks are ignored by browser. */
 
 </script>

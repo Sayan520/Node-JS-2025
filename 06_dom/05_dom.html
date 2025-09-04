@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM | Edit & Remove Element</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+  <ul class="language">
+    <li>JavaScript</li>
+  </ul>
+</body>
+<script>
+  // create element - value add (innerHTML) -- select parent -- append the child
+  function addLanguage(langName) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)
+  }
+
+  addLanguage('Python')
+  addLanguage('Laravel')
+
+  /* the previous function has a optimized issue. 
+  because it is always traversing tree for every element when execute the function
+  and at the end the value is added which is not better for large data */
+  
+  // optimized approach (appendChild)
+  function addOptiLanguage(langName) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.language').appendChild(li)
+  }
+
+  addOptiLanguage('Ruby')
+
+  // Edit - 1
+  const secondLang = document.querySelector('li:nth-child(2)')
+  console.log(secondLang);
+  // secondLang.innerHTML = "TypeScript" // optimization issue
+  const myli = document.createElement('li')
+  myli.textContent = "TypeScript"
+  secondLang.replaceWith(myli)
+
+  // Edit - 2
+  const firstLang = document.querySelector("li:first-child")
+  firstLang.outerHTML = "<li>Java</li>"
+
+  // Delete
+  const lastLang = document.querySelector('li:last-child')
+  lastLang.remove()
+</script>
+</html>
