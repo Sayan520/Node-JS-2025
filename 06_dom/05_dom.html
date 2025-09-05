@@ -11,10 +11,10 @@
   </ul>
 </body>
 <script>
-  // create element - value add (innerHTML) -- select parent -- append the child
+  // create element → value add (innerHTML) → select parent → append the child with parent
   function addLanguage(langName) {
     const li = document.createElement('li');
-    li.innerHTML = `${langName}`
+    li.innerHTML = `${langName}` // not optimized
     document.querySelector('.language').appendChild(li)
   }
 
@@ -25,10 +25,10 @@
   because it is always traversing tree for every element when execute the function
   and at the end the value is added which is not better for large data */
   
-  // optimized approach (appendChild)
+  // optimized approach: create element(li) → createTextNode → appendChild → attach with parent 
   function addOptiLanguage(langName) {
     const li = document.createElement('li');
-    li.appendChild(document.createTextNode(langName))
+    li.appendChild(document.createTextNode(langName)) // optimized version
     document.querySelector('.language').appendChild(li)
   }
 

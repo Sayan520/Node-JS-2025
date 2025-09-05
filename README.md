@@ -32,7 +32,7 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - DOM: `innerText, innerHTML, textContent`
   - DOM: `HTMLCollection, NodeList`
   - DOM: `ParentToChild & ChildToParent Traversing, NextElementSibling, NodeList`
-  - DOM: `How To Create A New Element`
+  - DOM: `How To Create, Edit & Delete Element`
   - Events
 
 ---
