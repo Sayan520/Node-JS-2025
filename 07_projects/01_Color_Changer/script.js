@@ -22,6 +22,7 @@ buttons.forEach(function(button) {
 })
 
 
+
 /* Key Points:
 
 Step 1: Select all the buttons (grey, red, yellow, violet) 
