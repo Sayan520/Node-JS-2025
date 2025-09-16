@@ -1,0 +1,63 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center Container */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+/* Banner */
+#banner span {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #00c6ff;
+  text-shadow: 0 0 6px rgba(0, 198, 255, 0.6);
+}
+
+/* Clock Display */
+#clock {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px 50px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+#clock:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.6);
+}
+
+/* Subtle Glow Animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(255, 152, 0, 0.9); }
+  100% { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+}
+
+#clock {
+  animation: glow 2s infinite alternate;
+}

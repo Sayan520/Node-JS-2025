@@ -1,0 +1,107 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wrapper */
+#wrapper {
+  background: #2b2b2b;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Form Elements */
+.form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  margin: 1.5rem 0 0.5rem;
+}
+
+#guessField {
+  width: 100%;
+  max-width: 280px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #555;
+  padding: 0 10px;
+  text-align: center;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#guessField:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+}
+
+/* Submit Button */
+#submit {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.5);
+}
+
+#submit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Results */
+.resultParas {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.resultParas p {
+  margin: 0.5rem 0;
+}
+
+.guesses, .lastResult {
+  font-weight: bold;
+  color: #00c6ff;
+}

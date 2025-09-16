@@ -1,0 +1,86 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 90%;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #f4f4f4; */
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+/* Container */
+.canvas {
+  margin: 80px auto;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #0072ff;
+}
+
+h2 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #444;
+}
+
+h2 span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Color Buttons */
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/* Specific Colors */
+#grey {
+  background-color: grey;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: gold;
+}
+
+#violet {
+  background-color: blueviolet;
+}
