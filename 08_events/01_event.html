@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+
+  // direct onclick gives no features, so better use addEventListener
+  document.getElementById('owl').onclick = function() {
+    alert('owl clicked')
+  }
+
+  // addEventListener()
+  document.getElementById('owl').addEventListener('click', function(e){
+    console.log(e); // e => function object
+    alert('owl clicked again')
+  }, false) // false is default param
+
+/* 
+type, timestamp, defaultPrevented
+target, toElement, srcElement, currentTarget
+clientX, clientY, screenX, screenY
+altkey, ctrlkey, shiftkey, keyCode
+*/
+
+
+// Event bubbling & Event capturing
+
+document.getElementById('images').addEventListener('click', function(e){
+  console.log('clicked inside the ul');
+}, false)
+
+document.getElementById('river').addEventListener('click', function(e){
+  console.log('river clicked');
+}, false)
+
+/* Event propagation: determines in which order the elements receive the event. 
+There are two ways to handle this event propagation order of HTML DOM is Event Bubbling and Event Capturing.
+event bubbling(false) => bottom to top => img - li - ul
+event capturing(true) => top to bottom => ul - li - img
+*/
+
+document.getElementById('google').addEventListener('click', function(e){
+  e.stopPropagation(); // prevent bubbling
+  e.preventDefault(); // prevent navigate to google
+  console.log('google clicked');
+}, false)
+
+
+// Remove any element
+document.querySelector('#images').addEventListener('click', function(e){
+  // console.log(e.target.parentNode);
+  console.log(e.target.tagName);
+  if (e.target.tagName === 'IMG'){
+    console.log(e.target.id);
+    let removeEle = e.target.parentNode
+    removeEle.remove()
+    // removeEle.parentNode.removeChild(removeEle) // approach-2
+  }
+})
+
+</script>
+</html>

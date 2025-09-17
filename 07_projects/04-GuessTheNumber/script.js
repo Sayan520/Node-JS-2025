@@ -25,7 +25,7 @@ if(playGame) {
   })
 }
 
-// check the number is valid or not
+// check the guess is valid or not(validation)
 function validateGuess(guess) {
   if(isNaN(guess)){
     alert('Please enter a valid number.')
@@ -58,7 +58,7 @@ function checkGuess(guess) {
   }
 }
 
-// cleanup value, show & update
+// cleanup value, show & update(DOM)
 function displayGuess(guess) {
   userInput.value = ''
   guessSlot.innerHTML += `${guess}, `

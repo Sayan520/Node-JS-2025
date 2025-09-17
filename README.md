@@ -33,7 +33,13 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - DOM: `HTMLCollection, NodeList`
   - DOM: `ParentToChild & ChildToParent Traversing, NextElementSibling, NodeList`
   - DOM: `How To Create, Edit & Delete Element`
-  - Events
+  - Events: `addEventListener, Event propagation(capturing & bubbling)`
+  - Projects:
+  1. Color Changer
+  2. BMI Generator
+  3. Digital Clock
+  4. Guess The Number
+  
 
 ---
 
