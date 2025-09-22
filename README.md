@@ -34,12 +34,14 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - DOM: `ParentToChild & ChildToParent Traversing, NextElementSibling, NodeList`
   - DOM: `How To Create, Edit & Delete Element`
   - Events: `addEventListener, Event propagation(capturing & bubbling)`
+  - Events: `SetTimeout, clearTimeout, setInterval, clearInterval`
   - Projects:
   1. Color Changer
   2. BMI Generator
   3. Digital Clock
   4. Guess The Number
-  
+  5. Unlimited Colors
+  6. Keyboard Check
 
 ---
 

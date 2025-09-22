@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Events - setTimeout</title>
+</head>
+<body>
+  <h1>Welcome To JavaScript Series 2025</h1>
+  <button id="go">click here</button>
+</body>
+<script>
+  // setTimeout
+  setTimeout(function(){
+    console.log('Hello Sayan!');
+  }, 2000)
+
+  // create a function and give reference in setTimeout()
+  const setMessage = function(){
+    console.log('This message appears after 3 seconds.')
+  }
+
+  setTimeout(setMessage, 3000) // setMessage is a reference/handler
+
+  // select h1, change innerHTML and pass in setTimeout
+  const changeText = function(){ 
+    document.querySelector('h1').innerHTML = "Welcome To NodeJS Series 2025"
+  }
+
+  // setTimeout(changeText, 4000)
+  
+  // clearTimeout when click the btn
+  const stopText = setTimeout(changeText, 4000)
+
+  document.querySelector('#go').addEventListener('click', function(){
+    clearTimeout(stopText)
+    console.log('Stopped');
+  })
+
+  /* setTimeout vs setInterval: two JavaScript functions used for scheduling code execution after a specified delay
+  1. setTimeout(function, delay): This function executes the provided function only once after the specified delay (in milliseconds) has passed.
+  To cancel a setTimeout before it executes, use clearTimeout() with the ID returned by setTimeout.
+  2. setInterval(function, delay): This function executes the provided function repeatedly at every specified delay (in milliseconds) until it is explicitly stopped.
+  To cancel a setInterval before it executes, use clearInterval() with the ID returned by setTimeout.
+  */
+</script>
+</html>
