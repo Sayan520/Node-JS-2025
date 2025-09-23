@@ -35,6 +35,9 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - DOM: `How To Create, Edit & Delete Element`
   - Events: `addEventListener, Event propagation(capturing & bubbling)`
   - Events: `SetTimeout, clearTimeout, setInterval, clearInterval`
+  - XMLHttpRequest: `open(), send(), readyState, onreadystatechange`
+  - v8 Engine: `https://github.com/v8/v8`
+  - Promise:
   - Projects:
   1. Color Changer
   2. BMI Generator

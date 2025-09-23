@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS Events - setInterval</title>
-</head>
-<body>
-  <h1>Welcome to Javascript series 2025</h1>
-  <button id="start">Start</button>
-  <button id="stop">Stop</button>
-</body>
-<script>
-  // setInterval
-  const setTime = function(){ 
-    console.log('hi', Date.now())
-  }
-  // setInterval(setTime, 2000)
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Events - setInterval</title>
+  </head>
+  <body>
+    <h1>Welcome to Javascript series 2025</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setInterval
+    const setTime = function () {
+      console.log("hi", Date.now());
+    };
+    // setInterval(setTime, 2000)
 
-  // accept third parameter
-  const myName = function(str){
-    console.log(str, Date.now())
-  }
+    // accept third parameter
+    const myName = function (str) {
+      console.log(str, Date.now());
+    };
 
-  // setInterval(myName, 1000, "Sayan")
+    // setInterval(myName, 1000, "Sayan")
 
-  // clearInterval
-  // const clearInt = setInterval(myName, 1000, "Sayan")
-  // clearInterval(clearInt)
+    // clearInterval
+    // const clearInt = setInterval(myName, 1000, "Sayan")
+    // clearInterval(clearInt)
 
-  // task: click on start btn => setInterval, click on stop btn => clearInterval
-  const startDate = function () {
-  console.log('The current time is:', new Date().toLocaleTimeString());
-  };
+    // task: click on start btn => setInterval, click on stop btn => clearInterval
+    const startDate = function () {
+      console.log("The current time is:", new Date().toLocaleTimeString());
+    };
 
-  let interValId; // global scope
+    let interValId; // global scope
 
-  document.querySelector('#start').addEventListener('click', function () {
-    if(!interValId){
-    interValId = setInterval(startDate, 1000); 
-    console.log('Started the setInterval event!');
-  }
-  });
+    document.querySelector("#start").addEventListener("click", function () {
+      if (!interValId) {
+        interValId = setInterval(startDate, 1000);
+        console.log("Started the setInterval event!");
+      }
+    });
 
-  document.querySelector('#stop').addEventListener('click', function () {
-    clearInterval(interValId);
-    interValId = null; 
-    console.log('Stopped the setInterval event!');
-  });
-
-</script>
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(interValId);
+      interValId = null;
+      console.log("Stopped the setInterval event!");
+    });
+  </script>
 </html>

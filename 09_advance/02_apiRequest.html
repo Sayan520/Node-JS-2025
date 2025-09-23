@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMLHttpRequest Task</title>
+    <style>
+      .card {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        margin: 50px auto;
+        text-align: center;
+      }
+      .container img {
+        width: 100px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 10px;
+      }
+      button {
+        padding: 8px 16px;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    <div class="card">
+      <div class="container" id="container">
+        <!-- Image will be inserted here -->
+        <h4><b>Sayan Ghosh</b></h4>
+        <button id="click">Click Here</button>
+        <p id="followers"></p>
+        <p>Software Developer</p>
+      </div>
+    </div>
+
+    <script>
+      const requestUrl = "https://api.github.com/users/Sayan520";
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", requestUrl);
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // make sure request succeeded
+          const data = JSON.parse(this.responseText);
+
+          const followers = document.querySelector("#followers");
+          const container = document.querySelector("#container");
+
+          document.getElementById("click").addEventListener("click", () => {
+            // Show followers
+            followers.innerHTML = `Followers: ${data.followers}`;
+
+            // Show profile picture
+            const oldImg = container.querySelector("img"); // remove old image
+            if (oldImg) oldImg.remove();
+
+            const img = document.createElement("img"); // create new image
+            img.src = data.avatar_url; // set source
+            container.insertBefore(img, container.firstChild); // add at top
+          });
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
