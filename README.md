@@ -37,7 +37,7 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - Events: `SetTimeout, clearTimeout, setInterval, clearInterval`
   - XMLHttpRequest: `open(), send(), readyState, onreadystatechange`
   - v8 Engine: `https://github.com/v8/v8`
-  - Promise:
+  - Promise: `resolve, reject, then catch finally, async await, try catch, fetch`
   - Projects:
   1. Color Changer
   2. BMI Generator
