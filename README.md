@@ -38,6 +38,9 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - XMLHttpRequest: `open(), send(), readyState, onreadystatechange`
   - v8 Engine: `https://github.com/v8/v8`
   - Promise: `resolve, reject, then catch finally, async await, try catch, fetch`
+  - Object Literals
+  - Constructor Function
+  - OOP: `Abstraction, Polymorphism, Encapsulation, Inheritance`
   - Projects:
   1. Color Changer
   2. BMI Generator

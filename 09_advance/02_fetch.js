@@ -12,7 +12,7 @@ async function getUser() {
 
 getUser();
 
-// another approach
+// using promise
 fetch("https://api.github.com/users/Sayan520")
   .then((response) => {
     return response.json();
