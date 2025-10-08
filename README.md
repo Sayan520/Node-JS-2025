@@ -41,6 +41,7 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - Object Literals
   - Constructor Function
   - OOP: `Abstraction, Polymorphism, Encapsulation, Inheritance`
+  - Prototype: `Prototypal inheritance, new, this`
   - Projects:
   1. Color Changer
   2. BMI Generator
