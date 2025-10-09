@@ -1,7 +1,7 @@
 # Beginner JavaScript Notes 2025 📘
 
 Welcome to **Beginner JavaScript Notes 2025**!  
-This repository is created for **absolute beginners** who want to learn JavaScript step by step with **simple examples, explanations, and notes**.  
+This repository is created for **absolute beginners** who want to learn JavaScript in NodeJS environment step by step with **simple examples, explanations, and notes**.  
 
 ---
 
@@ -42,6 +42,8 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - Constructor Function
   - OOP: `Abstraction, Polymorphism, Encapsulation, Inheritance`
   - Prototype: `Prototypal inheritance, new, this`
+  - Class Constructor
+  - Call, Bind & Apply
   - Projects:
   1. Color Changer
   2. BMI Generator

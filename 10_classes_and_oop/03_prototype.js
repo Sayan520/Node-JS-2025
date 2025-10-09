@@ -61,7 +61,7 @@ const TASupport = {
   __proto__: TeachingSupport // can inherits all property of TeachingSupport
 }
 
-Teacher.__proto__ = User
+Teacher.__proto__ = User // teacher can access all property from user
 
 // modern syntax
 Object.setPrototypeOf(TeachingSupport, Teacher)
