@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body style="background-color: #313131">
+    <button id="orange">Orange</button>
+    <button id="yellow">Yellow</button>
+  </body>
+  <script>
+      // DRY Principle: Don't Repeat Yourself
+      // Instead of writing event listeners separately for each button,
+      // we create one reusable function.
+
+      function clickHandler(color) {
+        // This function returns another function
+        return function () {
+          document.body.style.backgroundColor = color;
+        };
+      }
+
+      // Assign returned functions to button click events
+      document.getElementById("orange").onclick = clickHandler("orange");
+      document.getElementById("yellow").onclick = clickHandler("yellow");
+
+      /*
+        Closure Concept:
+       - When a function returns another function,
+         the inner function "remembers" the variables from its parent scope,
+         even after the parent function has finished executing.
+       - Here, the inner function remembers the value of `color`
+         from the outer function `clickHandler()`.
+       - That’s why each button correctly changes the background color
+         even though `clickHandler()` has already finished running.
+      */
+    </script>
+</html>

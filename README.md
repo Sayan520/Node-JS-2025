@@ -45,8 +45,9 @@ This repository is created for **absolute beginners** who want to learn JavaScri
   - Class Constructor, Inheritance, Static property
   - Call, Bind & Apply
   - Advance Objects:`getOwnPropertyDescriptor, defineProperty`
-  - Getter & Setter
-  - Projects:
+  - Getter & Setter: `class, function, object use-cases`
+  - Lexical Scoping & Closure
+  - **Projects**:
   1. Color Changer
   2. BMI Generator
   3. Digital Clock
@@ -57,7 +58,7 @@ This repository is created for **absolute beginners** who want to learn JavaScri
 ---
 
 ## 🧑‍🎓 Who is this for?
-- Complete beginners in **JavaScript**.
+- Complete beginners in **JavaScript** on **NodeJS Environment**.
 - Students who want **easy-to-understand notes**.
 - Anyone who prefers **short & clear examples** instead of reading long documentation.
 
